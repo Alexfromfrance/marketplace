@@ -1,7 +1,11 @@
 <h1>
-  <%= @restaurant[:name]  %>
+  <%= @restaurant.name  %>
 </h1>
 
 <p>
-  <%= @restaurant[:category].capitalize %> located at <%= @restaurant[:address].capitalize  %>
+  <%= @restaurant.category %> located at
+  <%= @restaurant.address %> with
+  <%= @restaurant.stars  %> *
 </p>
+
+<%= link_to "Back restaurants list", restaurants_path %>
